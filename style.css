@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-flow: monospace;
+}
+body{
+	background: url(bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	transform-style: preserve-3d;
+}
+h2{
+	text-align: center;
+	color: #fff;
+	font-size: 38px;
+	font-family: consolas;
+	margin-top: -40%;
+	text-shadow: 1px 1px 7px #777;
+}
+.earth{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	background: url(image.jpg);
+	background-size: cover;
+	background-repeat: repeat-x;
+	border-radius: 50%;
+	box-shadow: inset 0 0 20px rgba(0,0,0,1),
+					0 0 50px #4069ff;
+	animation: earthRotate 30s linear infinite;
+}
+@keyframes earthRotate{
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position: -2191px 0;
+	}
+}
+@media (max-width: 1200px){ h2{ margin-top: -50%; } }
+@media (max-width: 991px){ h2{ margin-top: -60%; } }
+@media (max-width: 864px){ h2{ margin-top: -76%; } }
+@media (max-width: 735px){ h2{ margin-top: -80%; } }
+@media (max-width: 580px){ h2{ margin-top: -90%; } }
+@media (max-width: 489px){ h2{ margin-top: -120%; } }
+@media (max-width: 412px){ h2{ margin-top: -140%; } }
