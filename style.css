@@ -45,7 +45,7 @@ h2{
 		background-position: 0;
 	}
 	100%{
-		background-position: -2191px 0;
+		background-position: -1533px 0;
 	}
 }
 @media (max-width: 1200px){ h2{ margin-top: -50%; } }
